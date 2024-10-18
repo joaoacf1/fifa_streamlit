@@ -4,6 +4,7 @@ df_data = st.session_state['data']
 
 df_data['Wage'] = (
     df_data['Wage']
+    .astype(str)
     .str.replace('€', '', regex=False)
     .str.replace('K', '000', regex=False)
     .astype(float)
