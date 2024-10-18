@@ -27,10 +27,8 @@ st.markdown('# FIFA23 OFFICIAL DATASET ⚽')
 
 st.sidebar.markdown('Developed by https://github.com/joaoacf1')
 
-btn = st.button('Access the data in Kaggle')
+btn = st.link_button('Access the data in Kaggle', 'https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database?resource=download')
 
-if btn:
-    webbrowser.open_new_tab('https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database?resource=download')
 
 st.markdown('''
             Unlock detailed player statistics from the FIFA23 Official Dataset!
